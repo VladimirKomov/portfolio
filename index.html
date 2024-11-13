@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<header class="bg-dark text-white text-center py-4">
+    <div class="container d-flex justify-content-between align-items-center">
+        <h3 class="m-0">Portfolio of a Full Stack Developer</h3>
+        <div class="social-links">
+            <a href="https://github.com/VladimirKomov" target="_blank" class="text-white me-3" aria-label="GitHub">
+                <i class="bi bi-github"></i>
+            </a>
+            <a href="mailto:vladimir.komov@example.com" class="text-white" aria-label="Email">
+                <i class="bi bi-envelope-fill"></i>
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- Profile section with photo and description -->
+<section class="container my-5">
+    <div class="row align-items-center">
+        <div class="col-md-4 text-center">
+            <img src="photo.jpg" alt="Profile photo" class="img-fluid rounded-circle profile-photo">
+        </div>
+        <div class="col-md-8">
+            <h2>Vladimir Komov</h2>
+            <p>An experienced full-stack developer with a deep understanding of automation processes and application development. I enjoy creating solutions that help users and optimize workflows.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section class="container">
+    <h2 class="text-center mb-4">My Projects</h2>
+    <div class="row">
+        <!-- Project card 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="carlin.png" alt="George Carlin Biography" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">George Carlin Biography</h5>
+                    <p class="card-text">A brief biography of the famous comedian George Carlin.</p>
+                    <a href="https://github.com/VladimirKomov/George_Carlin_page" target="_blank" class="btn btn-outline-dark me-2">
+                        <i class="bi bi-github"></i> GitHub
+                    </a>
+                    <a href="https://vladimirkomov.github.io/George_Carlin_page/" target="_blank" class="btn btn-outline-dark">
+                        <i class="bi bi-globe"></i> Website
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Project card 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="sharing.png" alt="Sharing Platform" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Sharing Platform</h5>
+                    <p class="card-text">An item-sharing application that facilitates interaction between users.</p>
+                    <a href="https://github.com/VladimirKomov/sharing-things-app" target="_blank" class="btn btn-outline-dark me-2">
+                        <i class="bi bi-github"></i> GitHub
+                    </a>
+                    <a href="https://frontend-vmye.onrender.com/" target="_blank" class="btn btn-outline-dark">
+                        <i class="bi bi-globe"></i> Website
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Project card 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="feline_friends.png" alt="Feline Friends TA" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Feline Friends TA</h5>
+                    <p class="card-text">An application for marking cat feeding points on a map with the ability to add photos and descriptions.</p>
+                    <a href="https://github.com/VladimirKomov/feline_friends" target="_blank" class="btn btn-outline-dark me-2">
+                        <i class="bi bi-github"></i> GitHub
+                    </a>
+                    <a href="https://mighty-beach-70402-96eee71ac1d0.herokuapp.com/" target="_blank" class="btn btn-outline-dark">
+                        <i class="bi bi-globe"></i> Website
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3 mt-5">
+    <p>&copy; <span id="year"></span> Vladimir Komov</p>
+</footer>
+
+<!-- Script for the current year -->
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

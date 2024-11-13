@@ -1,0 +1,24 @@
+/* CSS */
+.profile-photo {
+    width: 200px; /* Увеличьте размер по вашему желанию */
+    height: 200px; /* Установите высоту, чтобы фото стало квадратным */
+    border-radius: 20px; /* Закругленные углы */
+    object-fit: cover; /* Увеличение и обрезка для заполнения квадрата */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Установка фиксированной высоты и обрезка изображения */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    flex-grow: 1;
+}
